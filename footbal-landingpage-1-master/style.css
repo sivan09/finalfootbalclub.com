@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 
+    0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000a11;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4%;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo h3{
+    margin-left: -85px;
+}
+
+header button{
+    background-color: transparent;
+    border: 1px solid #f3572a;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+}
+
+header button:hover{
+    background-color: #f3572a;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner{
+    background-image: url('bg1.png');
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #010b12;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner .frontBanner{
+    background-image: url('bg2.png');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.bannerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bannerText h5{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.bannerText h3{
+    font-size: 65px;
+}
+
+.bannerText span{
+    color: #f3572a;
+}
+
+.bannerText ul{
+    display: flex;
+    list-style: none;
+    z-index: 99;
+}
+
+.bannerText ul li{
+    margin-right: 20px;
+}
+
+.bannerText button{
+    border: 1px solid #f3572a;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner ul li:nth-child(2) button{
+    background-color: #f3572a;
+    color: #fff;
+}
+
+.banner ul li:nth-child(1):hover button{
+    background-color: #f3572a;
+    color: #fff;
+    transition: 0.5;
+}
+
+.banner ul li:nth-child(2):hover button{
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5;
+}
+
+.liveMatch{
+    background-color: #000a11;
+}
+
+.liveMatchTitle{
+    text-align: center;
+}
+
+.liveMatch{
+    color: #fff;
+}
+
+.liveMatch h5, .lastMatch h5{
+    font-size: 25px;
+}
+
+.liveMatch h3, .lastMatch h3{
+    font-size: 30px;
+}
+
+.liveMatch span, .lastMatch span{
+    color: #f3572a;
+}
+
+.liveMatchContent{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.liveMatchContent .card{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #001320;
+    padding: 20px 30px;
+    margin-right: 30px;
+}
+
+.liveMatchContent .match{
+    width: 100%;
+}
+
+.liveMatchContent ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.liveMatch button{
+    background-color: transparent;
+    border: 1px solid #f3572a;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    margin: auto;
+}
+
+.liveMatch button:hover{
+    background-color: #f3572a;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.aboutUs{
+    color: #fff;
+    padding: 0 4%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUs .about1{
+    width: 45%;
+}
+
+.about1 h5{
+    font-size: 25px;
+}
+
+.about1 h3{
+    font-size: 40px;
+}
+
+.about1 span{
+    color: #f3572a;
+}
+
+.about1 p{
+    font-size: 12px;
+}
+
+.about1 button{
+    background-color: transparent;
+    border: 1px solid #f3572a;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.about1 button:hover{
+    background-color: #f3572a;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about1 img{
+    width: 100%;
+}
+
+/* Last Match */
+.lastMatch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    margin-top: 100px;
+}
+
+.lastMatch .card{
+    color: #fff;
+    text-align: center;
+}
+
+.lastMatch h3{
+    margin-bottom: 20px;
+}
+
+.lastMatch h4{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.lastMatch i{
+    font-size: 25px;
+    background-color: #f3572a;
+    padding: 15px 18px;
+    border-radius: 50%;
+}
+
+/* Professional */
+.professional{
+    color: #fff;
+    margin-top: 100px;
+}
+
+.professionalTitle{
+    text-align: center;
+}
+
+.professionalTitle span{
+    color: #f3572a;
+}
+
+.professionalTitle h5{
+    font-size: 30px;
+}
+
+.professionalTitle h3{
+    font-size: 40px;
+}
+
+.professionaContent{
+    padding:3rem 4%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.professionaContent .card{
+    width: 350px;
+    background-color: #001320;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.professionaContent h3{
+    margin: 20px;
+}
+
+.professionaContent p{
+    font-size: 12px;
+}
+
+/* Shedule */
+.schedule{
+    padding: 0 4%;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.scheduleTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule span{
+    color: #f3572a;
+}
+
+.scheduleTitle h5{
+    font-size: 25px;
+}
+
+.scheduleTitle h3{
+    font-size: 35px;
+}
+
+.schedule button{
+    background-color: transparent;
+    border: 1px solid #f3572a;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.schedule button:hover{
+    background-color: #f3572a;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.scheduleContent{
+    margin-top: 50px;
+}
+
+.scheduleContent .card{
+    padding: 30px;
+    border: 1px solid #f3572a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.scheduleContent .card .teams ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.scheduleContent .card .teams ul li{
+    margin-right: 30px;
+}
+
+.scheduleContent .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scheduleContent .description{
+    text-align: center;
+}
+
+.scheduleContent .description h3{
+    color: #f3572a;
+    margin: 10px 0;
+}
+
+/* Popular Team */
+.popularTeam{
+    margin-top: 50px;
+}
+
+.popularTitle{
+    text-align: center;
+}
+
+.popularTitle h5{
+    color: #fff;
+    font-size: 25px;
+}
+
+.popularTitle h3{
+    font-size: 30px;
+    color: #fff;
+}
+
+.popularTitle span{
+    color: #f3572a;
+}
+
+.popularContent{
+    padding: 0 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 70px;
+    margin-top: 70px;
+}
+
+.popularContent img{
+    width: 150px;
+    margin-right: 70px;
+}
+
+.videos{
+    background-image: url('bg3.jpg');
+    height: 500px;
+    background-size: cover;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videos i{
+    color: #fff;
+    font-size: 30px;
+    background-color: #f3572a;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.frontVideos{
+    background-image: url('bg2.png');
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+
+/* Player */
+.players{
+    margin-top: 100px;
+    padding: 0 4%;
+}
+
+.playersTitle{
+    color: #fff;
+    text-align: center;
+}
+
+.playersTitle h5{
+    font-size: 25px;
+}
+
+.playersTitle h3{
+    font-size: 30px;
+}
+
+.playersTitle span{
+    color: #f3572a;
+}
+
+.playerContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.playerContent .card{
+    color: #fff;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    background-color: #001320;
+}
+
+.playerContent .card .teks{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+/* Testimony */
+.testimony{
+    margin-top: 100px;
+    color: #fff;
+    display: flex;
+    padding: 0 4%;
+    justify-content: center;
+}
+
+.testimony .text{
+    width: 50%;
+    background-color: #001320;
+    padding: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.quotes1, .quotes2{
+    position: absolute;
+}
+
+.quotes1{
+    top: 60px;
+    left: 20px;
+}
+
+.quotes2{
+    bottom: 100px;
+    right: 20px;
+}
+
+/* Newslatter */
+.newslatter{
+    background-color: #f3572a;
+    color: #fff;
+    padding: 4rem 4%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form{
+    width: 500px;
+    display: flex;
+    position: relative;
+}
+
+.newslatter input{
+    padding: 10px 15px;
+    width: 100%;
+    position: relative;
+}
+
+.newslatter button{
+    position: absolute;
+    right: 5px;
+    padding: 8px 10px;
+    top: 4px;
+    background-color: #f3572a;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+}
+
+footer p{
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+footer li{
+    margin-right: 20px;
+}
+
+footer i{
+    background-color: #001320;
+    padding: 10px;
+    border-radius: 50%;
+    color: #f3572a;
+}
+
